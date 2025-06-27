@@ -195,7 +195,7 @@
       fetch(scriptURL, {method: 'POST', body: new FormData(form)})
         .then(response => {
           alert("Form submitted successfully!");
-          //form.reset();
+          form.reset();
         })
         .catch(error => alert('Error!', error.message));
     });
